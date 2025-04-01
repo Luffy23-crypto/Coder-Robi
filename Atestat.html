@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site cu video, navbar și chenar transparent</title>
+    <style>
+        /* Resetare stiluri implicite */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Stilizare pentru navbar */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ebe5e5;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background-color: #360606;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Efect la hover pentru navbar */
+        .navbar ul li a:hover {
+            background-color: #fff;
+            color: #333;
+            transform: translateY(-5px); /* Animație de mișcare */
+        }
+
+        /* Stilizare pentru video de fundal */
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asigură că video-ul acoperă întreaga fereastră */
+            z-index: -1; /* Plasează video-ul în spatele altor elemente */
+        }
+
+        /* Stilizare pentru chenar transparent */
+        
+            
+        
+
+        /* Stilizare pentru chenar */
+        .chenar {
+            padding: 400px;
+            background-color: rgba(0, 0, 0, 0); /* Transparent */
+            border: 2px solid #000; /* Border negru */
+            border-radius: 5px; /* Colțuri rotunjite */
+            font-size: 24px;
+            font-weight: bold;
+            color: #000; /* Culoare text negru */
+            text-align: center;
+            z-index: 1;
+            flex: justify content
+            o
+            
+        }
+    
+        
+
+        /* Stilizare pentru imagine */
+        .image-container {
+            width: 300px; /* Lățimea containerului imaginii */
+            height: 200px; /* Înălțimea containerului imaginii */
+            margin-top: 50px;
+            margin-left: 20px;
+            overflow: hidden; /* Ascunde orice parte care depășește containerul */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animație pentru mișcarea imaginii */
+        @keyframes moveImage {
+            0% {
+                transform: translateX(0); /* Imaginea începe de la poziția inițială */
+            }
+            50% {
+                transform: translateX(200px); /* Imaginea se deplasează 200px pe axa X */
+            }
+            100% {
+                transform: translateX(0); /* Imaginea revine la poziția inițială */
+            }
+        }
+
+        /* Aplicăm animația pe imagine doar când mouse-ul este pe imagine */
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease; /* Asigurăm o tranziție lină la început */
+        }
+
+        /* La hover pe imagine, animăm deplasarea imaginii */
+        .image-container:hover img {
+            animation: moveImage 2s infinite ease; /* Animația se activează doar la hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video de fundal -->
+    <video class="background-video" autoplay loop muted>
+        <source src="./John Wick Tribute  SURVIVOR - tstudios (1080p, h264).mp4" type="video/mp4">
+      
+    </video>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+           
+        </ul>
+    </div>
+
+    <!-- Chenar transparent cu text -->
+    # Welcome to My Website
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div style="text-align: center; font-size: 24px; margin-top: 50px;">
+        <h1>Welcome!</h1>
+        <p>We are glad to have you here.</p>
+        </div>
+
+        
+        
+        
+    
+
+  
+    
+
+</body>
+</html>
